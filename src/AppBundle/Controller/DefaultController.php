@@ -8,14 +8,23 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    /**
-     * @Route("/", name="homepage")
-     */
-    public function indexAction(Request $request)
-    {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', array(
-            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
-        ));
-    }
+  public function indexAction(Request $request)
+  {
+    return $this->render('AppBundle:Default:index.html.twig');
+  }
+  
+  public function showRoomAction($room)
+  {
+    return $this->render('AppBundle:Default:room_details.html.twig');
+  }
+  
+  public function settingsAction()
+  {
+    return $this->render('AppBundle:Default:settings.html.twig');
+  }
+  
+  public function logAction()
+  {
+    return $this->render('AppBundle:Default:log.html.twig');
+  }
 }
