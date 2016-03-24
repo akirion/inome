@@ -1,5 +1,13 @@
 {% extends '::base.html.twig' %}
 {% block stylesheets %}
+<link rel="stylesheet" type="text/css"
+      href="{{ asset('bundles/app/vendor/bootstrap/css/bootstrap.min.css') }}" />
+<link rel="stylesheet" type="text/css"
+      href="{{ asset('bundles/app/vendor/bootstrap/css/bootstrap-theme.min.css') }}" />      
 {% endblock %}
 {% block javascripts %}
+<script type="text/javascript"
+        src="{{ assert('bundles/app/vendor/jquery/js/jquery-2.2.2.min.js') }}"></script>
+<script type="text/javascript"
+        src="{{ assert('bundles/app/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 {% endblock %}
