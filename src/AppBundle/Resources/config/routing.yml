@@ -6,6 +6,10 @@ app_settings:
   path:     /settings
   defaults: { _controller: AppBundle:Default:settings }
   
+app_page:
+  path:     /page/{page_id}
+  defaults: { _controller: AppBundle:Default:showPage }  
+
 app_log:
   path:     /log
   defaults: { _controller: AppBundle:Default:log }

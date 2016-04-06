@@ -13,9 +13,9 @@ class DefaultController extends Controller
     return $this->render('AppBundle:Default:index.html.twig');
   }
   
-  public function showRoomAction($room)
+  public function showPageAction($room)
   {
-    return $this->render('AppBundle:Default:room_details.html.twig');
+    return $this->render('AppBundle:Default:page_details.html.twig');
   }
   
   public function settingsAction()
@@ -27,4 +27,11 @@ class DefaultController extends Controller
   {
     return $this->render('AppBundle:Default:log.html.twig');
   }
+  
+  public function settingsUsersAction()
+  {
+    
+  }
+  
+  
 }
