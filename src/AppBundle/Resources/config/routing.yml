@@ -5,7 +5,32 @@ app_index:
 app_settings:
   path:     /settings
   defaults: { _controller: AppBundle:Default:settings }
+
+app_settings_users:
+  path:     /settings/users
+  defaults: { _controller: AppBundle:Default:settingsUsers }
   
+app_settings_user_details:
+  path:     /settings/users/{user_id}
+  defaults: { _controller: AppBundle:Default:settingsUserDetails }
+  
+app_settings_rules:
+  path:     /settings/rules
+  defaults: { _controller: AppBundle:Default:settingsRules }
+  
+app_settings:
+  path:     /settings/sitemap
+  defaults: { _controller: AppBundle:Default:settingsSiteMap }
+  
+app_settings:
+  path:     /settings/devices
+  defaults: { _controller: AppBundle:Default:settingsDevices }
+  
+  
+app_page:
+  path:     /page/{page_id}
+  defaults: { _controller: AppBundle:Default:showPage }  
+
 app_log:
   path:     /log
   defaults: { _controller: AppBundle:Default:log }

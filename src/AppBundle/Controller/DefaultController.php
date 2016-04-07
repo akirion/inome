@@ -13,9 +13,9 @@ class DefaultController extends Controller
     return $this->render('AppBundle:Default:index.html.twig');
   }
   
-  public function showRoomAction($room)
+  public function showPageAction($page_id)
   {
-    return $this->render('AppBundle:Default:room_details.html.twig');
+    return $this->render('AppBundle:Default:page_details.html.twig');
   }
   
   public function settingsAction()
@@ -27,4 +27,31 @@ class DefaultController extends Controller
   {
     return $this->render('AppBundle:Default:log.html.twig');
   }
+  
+  public function settingsUsersAction()
+  {
+    return $this->render('AppBundle:Default:settings_users.html.twig');
+  }
+  
+  public function settingsUserDetailsAction($user_id)
+  {
+    return $this->render('AppBundle:Default:settings_user_details.html.twig');
+  }  
+  
+  public function settingsSiteMapAction()
+  {
+    return $this->render('AppBundle:Default:settings_sitemap.html.twig');
+  }
+  
+  public function settingsRulesAction()
+  {
+    return $this->render('AppBundle:Default:settings_rules.html.twig');
+  }
+  
+  public function settingsDevicesAction()
+  {
+    return $this->render('AppBundle:Default:settings_devices.html.twig');
+  }
+  
+
 }
