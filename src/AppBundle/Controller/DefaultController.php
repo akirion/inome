@@ -22,12 +22,7 @@ class DefaultController extends Controller
   {
     return $this->render('AppBundle:Default:settings.html.twig');
   }
-  
-  public function logAction()
-  {
-    return $this->render('AppBundle:Default:log.html.twig');
-  }
-  
+
   public function settingsUsersAction()
   {
     return $this->render('AppBundle:Default:settings_users.html.twig');
@@ -38,9 +33,33 @@ class DefaultController extends Controller
     return $this->render('AppBundle:Default:settings_user_details.html.twig');
   }  
   
+  public function addUserAction()
+  {
+  }
+  
+  public function updateUserAction()
+  {
+  }
+  
+  public function deleteUserAction()
+  {
+  }
+  
   public function settingsSiteMapAction()
   {
     return $this->render('AppBundle:Default:settings_sitemap.html.twig');
+  }
+  
+  public function addSiteMapItemAction()
+  {
+  }
+  
+  public function updateSiteMapItemAction()
+  {
+  }
+  
+  public function deleteSiteMapItemAction()
+  {
   }
   
   public function settingsRulesAction()
@@ -48,10 +67,41 @@ class DefaultController extends Controller
     return $this->render('AppBundle:Default:settings_rules.html.twig');
   }
   
+  public function settingsRuleAction($id)
+  {
+    
+  }
+  
+  public function addRuleAction()
+  {
+  }
+  
+  public function updateRuleAction()
+  {
+  }
+  
+  public function deleteRuleAction()
+  {
+  }
+  
   public function settingsDevicesAction()
   {
     return $this->render('AppBundle:Default:settings_devices.html.twig');
   }
   
-
+  public function settingsDeviceDetailsAction()
+  {
+    
+  }
+  
+  public function logAction()
+  {
+    return $this->render('AppBundle:Default:log.html.twig');
+  }
+  
+  public function logMessagesAction($offset, $count)
+  {
+    return $this->render('AppBundle:Default:log.html.twig');
+  }
+  
 }
