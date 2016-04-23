@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+html,body{
+  height: 100%;
+}
+.content-wrapper{
+  min-height:100%;
+}
+.footer{
+  height:2em;
+  margin-top: -2em;
+  line-height:1.9em;
+  text-align:center;
+  clear:both;
+}
+.footer>span{
+  vertical-align:middle;
+}
