@@ -7,12 +7,12 @@ html,body{
   min-height:100%;
 }
 .footer{
-  height:40px;
-  margin-top: -40px;
-  line-height:40px;
+  height:2em;
+  margin-top: -2em;
+  line-height:1.9em;
   text-align:center;
   clear:both;
 }
-.footer>p{
+.footer>span{
   vertical-align:middle;
 }
