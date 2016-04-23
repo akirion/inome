@@ -1,37 +1,52 @@
 app_index:
   path:     /
   defaults: { _controller: AppBundle:Default:index }
+  methods:  [GET]
   
 app_settings:
   path:     /settings
   defaults: { _controller: AppBundle:Default:settings }
+  methods:  [GET]
 
 app_settings_users:
   path:     /settings/users
   defaults: { _controller: AppBundle:Default:settingsUsers }
+  methods:  [GET]
   
 app_settings_user_details:
   path:     /settings/users/{user_id}
   defaults: { _controller: AppBundle:Default:settingsUserDetails }
+  methods:  [GET]
   
 app_settings_rules:
   path:     /settings/rules
   defaults: { _controller: AppBundle:Default:settingsRules }
+  methods:  [GET]
   
-app_settings:
+app_settings_sitemap:
   path:     /settings/sitemap
   defaults: { _controller: AppBundle:Default:settingsSiteMap }
+  methods:  [GET]
   
-app_settings:
+app_settings_sitemap:
+  path:     /settings/sitemap
+  defaults: { _controller: AppBundle:Default:settingsSiteMap }
+  methods:  [GET]
+  
+  
+app_settings_devices:
   path:     /settings/devices
   defaults: { _controller: AppBundle:Default:settingsDevices }
-  
+  methods:  [GET]
   
 app_page:
   path:     /page/{page_id}
   defaults: { _controller: AppBundle:Default:showPage }  
+  methods:  [GET]
 
 app_log:
   path:     /log
   defaults: { _controller: AppBundle:Default:log }
+  methods:  [GET]
+  
   
